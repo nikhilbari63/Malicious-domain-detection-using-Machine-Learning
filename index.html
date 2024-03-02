@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Malicious Domain Detection - Result</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    /* Header styles */
+    #intro {
+      background-image: url("https://ak.picdn.net/shutterstock/videos/1065791773/thumb/1.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .heading {
+      text-align: center;
+      color: #ffffff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      margin-bottom: 0; /* Remove default margin */
+      padding-bottom: 20px; /* Add padding to move the form downwards */
+    }
+
+    .heading h1 {
+      font-size: 5rem; /* Increase font size */
+    }
+
+    /* Form styles */
+    .form-container {
+      background-color: #f0eaeab8;
+      padding: 30px;
+      border-radius: 25px; /* Adjust border radius */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container h3 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      color: #333333;
+    }
+
+    /* Change the button type and add shadow effect */
+    .form-container button[type="submit"] {
+      background-color: #333333;
+      color: #ffffff;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      border-radius: 25px; /* Adjust border radius */
+    }
+
+    .form-container button[type="submit"]:hover {
+      background-color: #222222;
+    }
+
+    /* Warning message styles */
+    .warning-message {
+      color: red;
+      font-size: 14px;
+      margin-top: 5px;
+      display: none; /* Initially hide the warning message */
+      text-align: center; /* Center the warning message */
+    }
+
+    .warning-symbol {
+      color: red; /* Set the color to red */
+      font-size: 24px;
+      margin-right: 5px;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #333333;
+      color: #ffffff;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<div id="intro" class="bg-image shadow-2-strong">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading">
+                    <h1>Malicious Domain Detection</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="form-container">
+                    <h3>Check if the Domain is Malicious or Benign</h3>
+                    <form action="/predict" method="post" onsubmit="return validateForm()">
+                        <div class="form-group">
+                            <label for="domain">Enter Domain:</label>
+                            <input type="text" class="form-control" id="domain" name="domain">
+                        </div>
+                        <!-- Warning message -->
+                        <div class="warning-message" id="warning-message">
+                            Please enter a domain. ❗
+                        </div>
+                        <!-- Change the button type and add shadow effect -->
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-left">
+                <p>Guidance by <br>Ms Swati Singh</p>
+            </div>
+            <div class="col-md-6 text-right">
+                <p>Created by <br>Bari Nikhil Nilesh - 230950125014<br>Dhanashri H. Jadhav - 230950125018<br>Pooja Bhaskarrao Kaware - 230950125045<br>Puja Suresh Karnase - 230950125047<br>Rutuja Patangrao Pawar - 230950125055</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function validateForm() {
+        var domain = document.getElementById("domain").value;
+        if (domain === "") {
+            document.getElementById("warning-message").style.display = "block";
+            return false;
+        }
+        return true;
+    }
+</script>
+
+</body>
+</html>
