@@ -27,14 +27,14 @@ while the result pages can provide insights into the domains searched and their 
 ![domain not found output](https://github.com/nikhilbari63/Malicious-domain-detection-using-Machine-Learning/assets/160225662/6c784bc6-2947-4e24-ba9f-f00e679e48ba)
 
 Contributing
-Mr. Bari Nikhil Nilesh 
-Ms. Dhanashri H. Jadhav 
-Ms. Pooja B. Kaware 
-Ms. Puja S. Karnase 
+Mr. Bari Nikhil Nilesh   
+Ms. Dhanashri H. Jadhav   
+Ms. Pooja B. Kaware   
+Ms. Puja S. Karnase   
 Ms. Rutuja P. Pawar
 
 Contact
-Bari Nikhil Nilesh
+Bari Nikhil Nilesh  
 email- nikhilbari63@gmail.com
 
 
